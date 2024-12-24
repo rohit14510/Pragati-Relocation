@@ -22,7 +22,7 @@ header {
 
 .nav-links ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 600;
     transition: .5s all;
@@ -41,7 +41,7 @@ header {
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
-        top: 80px;
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: white;
@@ -63,6 +63,7 @@ header {
     .menu-icon {
         display: block;
         text-align: end;
+        color: white;
     }
 
     .nav-links.active {
@@ -88,7 +89,12 @@ header {
 /* ----------------------------------------------end   Header---------------------------------------------------------- */
 /* ---------------------------------------------Start Splide Slider----------------------------------------------------- */
 .Container_height{
-    height: 80px !important;
+  height: 80px !important;
+}
+@media (max-width: 768px) {
+.Container_height{
+  height: 30px !important;
+}
 }
 
 
@@ -119,6 +125,14 @@ header {
   text-decoration: none;
   border: none;
 }
+.about_Topic{
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .about_Topic{
+    font-size: 2rem;
+  }
+}
 /* -----------------------------------------------------------------Start Project-------------------------------------- */
 .Project_Section {
   background-image: url('assets/banner-img3.jpg'); /* Replace with your background image path */
@@ -128,11 +142,16 @@ header {
   background-repeat: no-repeat; /* Prevents the image from repeating */
   padding:80px 50px; /* Adds spacing above and below the content */
 }
-
+@media (max-width: 768px) {
+  .Project_Section{
+    padding: 30px;
+  }
+}
 .ProjecrCard{
   background-color: white;
   padding: 10px;
   border-radius: 20px;
+  margin-top: 20PX;
 }
 /* ------------------------------------------------------Services------------------------------------------------------ */
 .booknow{
