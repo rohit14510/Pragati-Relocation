@@ -1,0 +1,319 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10px 8px;
+    background-color: white;
+    color: black;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin: 0 15px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s all;
+}
+.nav-links ul li a:hover{
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .nav-links ul {
+        display: block;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        text-align: end;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-links ul li {
+        margin: 0 45px;
+    }
+}
+/* ----------------------------------------------end   Header---------------------------------------------------------- */
+/* ---------------------------------------------Start Splide Slider----------------------------------------------------- */
+.Container_height{
+    height: 80px !important;
+}
+
+
+.splide__slide {
+  position: relative;
+
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.splide__slide img {
+  width: 100%;
+ background-size: cover;
+}
+
+/* ------------------------------------------------------------Start About Section---------------------------------- */
+.btn-discover {
+  background-color: #e71b00;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+}
+/* -----------------------------------------------------------------Start Project-------------------------------------- */
+.Project_Section {
+  background-image: url('assets/banner-img3.jpg'); /* Replace with your background image path */
+  background-attachment: fixed; /* Makes the background fixed */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding:80px 50px; /* Adds spacing above and below the content */
+}
+
+.ProjecrCard{
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+/* ------------------------------------------------------Services------------------------------------------------------ */
+.booknow{
+  padding: 10px 30px;
+  background-color: #077BAF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.serviceCard {
+  position: relative;
+  background-color: white;
+  transition: 0.3s ease;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+border-radius: 10px;
+}
+.icon-container{
+  background-color: white;
+  width: 5rem;
+  height: 5rem;
+  padding: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.serviceBg-Image:hover {
+  background-image: url('assets/about_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.serviceBg-Image1:hover {
+  background-image: url('assets/ser2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.serviceBg-Image2:hover {
+  background-image: url('assets/ser3.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.serviceBg-Image3:hover {
+  background-image: url('assets/ser4.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.serviceBg-Image4:hover {
+  background-image: url('assets/ser5.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.serviceBg-Imag5:hover {
+  background-image: url('assets/ser6.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.serviceCard .overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 44, 99, 0.5); /* Semi-transparent black */
+  transition: top 0.3s ease;
+  z-index: 1;
+}
+
+.serviceCard:hover .overlay {
+  top: 0;
+}
+
+.serviceCard h4, 
+.serviceCard p, 
+.serviceCard svg, 
+.serviceCard button ,
+.icon-container{
+  position: relative;
+  z-index: 2; /* Ensures content stays above the overlay */
+  
+}
+.serviceCard:hover .content{
+  color: white;
+}
+
+/* ----------------------------------------------------Choose Section------------------------------------------------ */
+.choose_Section{
+  background-image: url('assets/banner-img1.jpg'); /* Replace with your background image path */
+  background-attachment: fixed; /* Makes the background fixed */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding:0px 0px; /* Adds spacing above and below the content */
+}
+
+.choosecard{
+  background-color: rgba(13, 44, 99, 0.7);
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.contact-section p {
+  font-size: 16px;
+  color: #666;
+}
+.contact-section .form-control {
+  margin-bottom: 20px;
+}
+.contact-section .btn {
+  background-color: #ff6600;
+  color: #fff;
+}
+.social-icons a {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  text-align: center;
+  background-color: #0D2C63;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #3A97C0; 
+}
+
+.form_btn {
+  background-color: #e71b00;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+}
+
+.footer{
+    background-color: #141B2D;
+    color: white;
+}
+.footer_list{
+    list-style-type: none;
+ 
+    padding: 0%;
+}
+.footer_list li{
+    margin-bottom: 1rem;
+}
+.footer_list li a{
+    text-decoration: none;
+    color: white;
+}
+.footer_btn{
+    display: block;
+    padding: 10px 50px;
+    border: none;
+    background-color: #e71b00;
+    color: white;
+    font-weight: 700;
+}
