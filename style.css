@@ -301,6 +301,107 @@ border-radius: 10px;
   color: white;
 }
 
+/* ----Quote-Section-Start---- */
+
+.quote-section {
+  position: relative;
+}
+
+.quote-two {
+  padding-bottom: 130px;
+}
+
+.qs-item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.quote-section h2 {
+  color: #fff
+}
+
+.qs-box {
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 30px;
+  background-color: #fff;
+  z-index: 9;
+}
+
+.qs-box p {
+  margin: 0px;
+}
+
+.quote-section::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 65%;
+  content: '';
+}
+
+.quote-section::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-position: center;
+  width: 35%;
+  background-image: url(../images/quote.webp);
+  background-size: cover;
+  content: '';
+}
+
+.quote-section .form-box {
+  padding: 30px;
+  position: relative;
+  z-index: 33;
+}
+
+.quote-section .form-box h2 {
+  color: #1AC5E2;
+  font-size: 40px;
+}
+
+.form-box .f-group input,
+.form-box .f-group textarea,.form-box .f-group select {
+  width: 100%;
+  padding: 13px 20px;
+  border: 1px solid #000;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #000;
+  outline: none;
+  background-color: transparent;
+}
+
+.form-box .f-group input::placeholder,
+.form-box .f-group textarea::placeholder {
+  color: #000;
+}
+
+.form-box .sec-btn {
+  background-color: transparent;
+}
+
+.form-box .sec-btn:hover {
+  background-color: #1AC5E2;
+}
+
+.form-box .f-group select {
+  padding: 12px 20px;
+ 
+}
+
+/* ----Quote-Section-End---- */
+
+
 /* ----------------------------------------------------Choose Section------------------------------------------------ */
 .choose_Section{
   background-image: url('assets/banner-img1.jpg'); /* Replace with your background image path */

@@ -508,29 +508,64 @@
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-lg-8 ">
-                <h4 class="text-center fw-bold mb-3">Get In Touch</h4>
-                <form action="" method="POST">
-                    <div class="row">
-                         <div class="form-group col-md-6">
-                            <input type="text" name="Name" class="form-control" placeholder="Your Name">
+                <div class="form-box">
+                    <h2 class="text-center">Get A Free Quote</h2>
+                    <form action="send.php" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="f-group">
+                                    <input type="text" placeholder="Enter Your Name" name="name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="f-group">
+                                    <input type="number" placeholder="Enter Phone No." name="phone" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="f-group">
+                                    <input type="email" placeholder="Enter Your Email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="f-group">
+                                    <input type="text" placeholder="Move From" name="movefrom" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="f-group">
+                                    <input type="text" placeholder="Move To" name="moveto" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                    <div class="f-group">
+                                        <select name="service" required>
+                                            <option value="Select Services">Select Services</option>
+                                            <option value="Car Transportation">Car Transportation</option>
+                                            <option value="Bike Transportation">Bike Transportation</option>
+                                            <option value="FTL Transportation">FTL Transportation</option>
+                                            <option value="Car Carrier Services">Car Carrier Services</option>
+                                            <option value="Office Shifting">Office Shifting</option>
+                                            <option value="Household Shifting">Household Shifting</option>
+                                            <option value="Logistic Services">Logistic Services</option>
+                                            <option value="Warehousing Services">Warehousing Services</option>
+                                            <option value="Air Cargo Services">Air Cargo Services</option>
+                                        </select>
+                                    </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="f-group">
+                                    <textarea name="msg" placeholder="Write your note here..." cols="30" rows="3" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="f-group">
+                                    <button class="form_btn" type="submit" name="submit"><span>SEND MESSAGE</span></button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="email" name="Email" class="form-control" placeholder="Enter Email">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="text" name="subject" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="form-group col-md-6"> <input type="text" name="Mobile No." class="form-control" placeholder="Phone">
-                        </div>
-                    </div>
-                    <div class="form-group"> <textarea class="form-control" name="Message" rows="5" placeholder="Message"></textarea>
-                    </div>
-                    <div class="text-center ">
-                        <button type="submit" class="form_btn rounded">Send Message</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
 
         </div>
