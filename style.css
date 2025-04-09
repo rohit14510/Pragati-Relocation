@@ -1,6 +1,6 @@
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding:10px 8px;
     background-color: white;
@@ -39,6 +39,14 @@ header {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 8px;
+    background-color: white;
+    color: black;
+}
     .nav-links {
         position: absolute;
         top: 100%;
@@ -198,11 +206,13 @@ header {
 /* ------------------------------------------------------Services------------------------------------------------------ */
 .booknow{
   padding: 10px 30px;
-  background-color: #077BAF;
-  color: white;
+  background-color: #077BAF !important;
+  color: white !important;
+  text-decoration: none;
   border: none;
   border-radius: 10px;
   font-weight: 600;
+  z-index: 100;
 }
 
 .serviceCard {
